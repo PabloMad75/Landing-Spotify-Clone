@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Colocar ícono pestaña navegador -->
+    <link rel="shortcut icon" href="/assets/images/spotify.png" type="image/x-icon" />
+    <!-- enlace a cdn de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <!-- enlace a cdn de iconos de bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/spotify.css">
+    <title>Spotify Clone</title>
+</head>
+
+<body>
+    <!-- Cabecera -->
+    <header class="bg-black sticky-top">
+        <!-- inicio del menú con Bootstrap
+        - clase "navbar" indica menú
+        - clase  "navbar-expand" menú colapsable tiene puntos de quiebre según tamaño de pantalla sm = small md = medium, lg = large
+        - la clase navbar requiere un contenedor de tipo fluid para el menú (recomendado por Bootstrap)
+        - se puede incluir un icono de la marca
+        - navbar-dark indica letras oscuras
+        - bg-black pinta el fondo
+        -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+                <article class="container-fluid">
+                    <!-- icono navbar -->
+                    <a class="navbar-brand" href="#">
+                        <!-- ícono de spotify desde boostrap -->
+                        <i class="bi bi-spotify h2"></i>
+                        <span class="fs-2"> Spotify</span>
+                    </a>
+
+                    <!-- botón cuando el menú se colapsa por el breakpoint del tamaño de la pantalla -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- elementos del menú colapsable 
+                        los enlaces deben ir dentro del menu colapsable
+                        estos deben ir dentro de un contenedor con las sisiguientes clases:
+                            collapse navbar-collapse
+                            ademas el contenedor debe tener un id para que sea llamado desde data-bs-target="#menu" del boton navbar toggler
+                        -->
+                    <section class="collapse navbar-collapse" id="menu">
+                        <!-- La etiqueta ul debe tener la clase "navbar-nav"
+                            y los enlaces deben tener la etiqueta "nav-item"
+                            ms-auto ubico los elementos del menu en la parte derecha de la pantalla
+                            me ubico los elementos del menu al lado izquierdo
+                            -->
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Premiun</a>
+                            </li>
+                            <li class="nav-item blanco">
+                                <a class="nav-link" href="">Ayuda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Descargar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">|</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Registrase</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Iniciar Sesión</a>
+                            </li>
+                        </ul>
+                        <!-- genera una linea blanca al final del menu colapsable -->
+                        <hr class="text-white-50" />
+                    </section>
+                </article>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido central -->
+    <main>
+        <section class="image-central col-sm-12 col-md-12">
+            <p class="texto"><strong>Escuchar</strong></p>
+            <p class="texto1"><strong>es todo</strong></p>
+            <p class="texto2">Millones de canciones y podcast. No necesitas tarjeta de crédito</p>
+            <button type="button" class="btn btn-success">OBTÉN SPOTIFY FREE</button>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-black sticky-top">
+        <article class="container">
+            <section class="container-fluid">
+                <div class="row text-white p-5">
+                    <div class="col-xs-12 col-md-6 col-lg-2 mb-3">
+                        <i class="bi bi-spotify h2"></i>
+                        <span class="fs-2"> Spotify</span>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-2 mb-3">
+                        <p class="H4 mb-3">COMPAÑIA</p>
+                        <div class="mb-2">
+                            <a class="text-white text-decoration-none" href="#">Acerca de</a>
+                        </div>
+                        <div class="mb-2">
+                            <a class="text-white text-decoration-none" href="#">Empleo</a>
+                        </div>
+                        <div class="mb-2">
+                            <a class="text-white text-decoration-none" href="#">For the record</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-2 mb-3">
+                        <p class="H4">COMUNIDADES</p>
+                        <div class="mb-2">
+                            <a class="text-white text-decoration-none" href="#">Para artistas</a>
+                        </div>
+                        <div class="mb-2">
+                            <a class="text-white text-decoration-none" href="#">Desarrolladores</a>
+                        </div>
+                        <div class="mb-2">
+                            <a class="text-white text-decoration-none" href="#">Publicidad</a>
+                        </div>
+                        <div class="mb-2">
+                            <a class="text-white text-decoration-none" href="#">Inversionistas</a>
+                        </div>
+                        <div class="mb-2">
+                            <a class="text-white text-decoration-none" href="#">Proveedores</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-2 mb-3">
+                        <p class="H4">ENLACES ÚTILES</p>
+                        <div class="mb-2">
+                            <a class="text-white text-decoration-none" href="#">Ayuda</a>
+                        </div>
+                        <div class="mb-2">
+                            <a class="text-white text-decoration-none" href="#">Reproductor web</a>
+                        </div>
+                        <div class="mb-2">
+                            <a class="text-white text-decoration-none" href="#">App móvil gratis</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-2 ms-auto">
+                        <ul class="navbar-nav flex-row flex-wrap text-light">
+                            <li class="nav-item col-12 col-md-4 px-3">
+                            <i class="btn btn-secondary rounded-circle bi bi-instagram mb-3"></i>
+                                <small class="d-md-none ms-2">Instagram</small>
+                            </li>
+                            <li class="nav-item col-12 col-md-4 px-3">
+                            <i class="btn btn-secondary rounded-circle bi bi-twitter mb-3"></i>
+                                <!-- No se visualiza despues del breakpoint md-->
+                                <small class="d-md-none ms-2">Twitter</small>
+                            </li>
+                            <li class="nav-item col-12 col-md-4 px-3">
+                            <i class="btn btn-secondary rounded-circle bi bi-facebook mb-3"></i>
+                                <small class="d-md-none ms-2">Facebook</small>
+                            </li>
+                        </ul>
+                    </div>
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-black ">
+                        <ul class="navbar-nav text-white ms-start">
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Legal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Centro de privacidad</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Politica de Privacidad</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Cookies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Sobre los anuncios</a>
+                            </li>
+                        </ul>
+                        <span class="col-xs-12 col-sm-12 col-md-12 col-lg-3 ms-auto">© 2023 Spotify AB</span>
+                        <!-- 
+                            verificar para colocar redondela en icono
+                            <div class="col-lg-4 my-3 my-lg-0">
+                            <a class="btn btn-dark rounded-5 mx-5" href="#!" aria-label="Twitter"><i class="bi bi-facebook md"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div> -->
+                    </nav>
+                </div>
+            </section>
+        </article>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
