@@ -19,7 +19,7 @@ a:hover{
 
 .image-central{
     text-align: center;
-    background-image: linear-gradient(#00000080, rgba(0, 0, 0, 0.5)), url(../images/fondoSpotify.jpg);
+    background-image: linear-gradient(#00000080, rgba(0, 0, 0, 0.5)), url(assets/images/fondoSpotify.jpg);
     padding: 90px;
     background-position: center;
     background-repeat: no-repeat;
